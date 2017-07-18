@@ -42,4 +42,8 @@ describe('MyApp Component', () => {
     expect(component.pages.length).toBe(2);
   });
 
+  it('component should exists', () => {
+    expect(component).toBeDefined();
+  });
+
 });
