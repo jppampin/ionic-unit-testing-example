@@ -30,4 +30,11 @@ describe('RedditProvider', () => {
 
   it('should create component', () => expect(testObject).toBeDefined());
 
+  it('getAll should return a list of articles', async(() => {
+    // testObject.getAllXbox()
+    //   .subscribe( (value) => {
+    //   console.log(value);
+    // } );
+  }));
+
 });

@@ -9,6 +9,7 @@ import { Page2 } from '../pages/page2/page2';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { RedditProvider } from '../providers/reddit/reddit';
+import { IonicStorageModule } from '../plugins';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RedditProvider } from '../providers/reddit/reddit';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp, {}, { links: [] })
+    IonicModule.forRoot(MyApp, {}, { links: [] }),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [

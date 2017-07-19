@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Storage } from '../../plugins';
 
 import { NavController } from 'ionic-angular';
 
@@ -8,8 +9,9 @@ import { NavController } from 'ionic-angular';
 })
 export class Page1 {
 
-  constructor(public navCtrl: NavController) {
-
+  constructor(public navCtrl: NavController, private storage: Storage) {
+    console.log(storage);
+    storage.keys().then(console.log);
   }
 
 }

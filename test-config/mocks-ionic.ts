@@ -1,6 +1,14 @@
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+export class StorageMock {
+  public keys(): Promise<string[]> {
+    return new Promise(
+      (resolve) => { resolve(['1', '2']); }
+    );
+  }
+}
+
 export class PlatformMock {
   public ready(): Promise<{String}> {
     return new Promise((resolve) => {
